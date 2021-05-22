@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
 
     Calculator victim = new Calculator();
+
     @Test
     public void sumOperation() {
         int actual = victim.sumOperation(3,5);
