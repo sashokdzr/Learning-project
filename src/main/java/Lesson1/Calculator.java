@@ -1,27 +1,44 @@
 package Lesson1;
 
 class Calculator {
-    /**a+b**/
+    /**
+     * a+b
+     **/
     int sumOperation(int a, int b) {
         return a + b;
     }
-/**a/b**/
+
+    /**
+     * a/b
+     **/
     double divisionOperation(int a, int b) {
         return (double) a / b;
     }
-/**a*b**/
+
+    /**
+     * a*b
+     **/
     int multiplicationOperation(int a, int b) {
         return a * b;
     }
-/**a-b**/
+
+    /**
+     * a-b
+     **/
     int reductionOperation(int a, int b) {
         return a - b;
     }
-/**Сложение двух строк a и b **/
+
+    /**
+     * Сложение двух строк a и b
+     **/
     String concantinationOperation(String a, String b) {
         return a + b;
     }
-/** Сумма элементов массива **/
+
+    /**
+     * Сумма элементов массива
+     **/
     int arraySum(int[] arr) {
         int sum = 0;
         for (int element : arr) {
@@ -29,7 +46,10 @@ class Calculator {
         }
         return sum;
     }
-/**Максимальный элемент массива**/
+
+    /**
+     * Максимальный элемент массива
+     **/
     int arrayMax(int[] arr) {
         int max = arr[0];
         for (int j : arr) {
@@ -38,7 +58,10 @@ class Calculator {
         }
         return max;
     }
-/**Минимальный элемент массива**/
+
+    /**
+     * Минимальный элемент массива
+     **/
     int arrayMin(int[] arr) {
         int min = arr[0];
         for (int j : arr) {
@@ -47,9 +70,12 @@ class Calculator {
         }
         return min;
     }
-/**Сортировка массива по возрастанию**/
+
+    /**
+     * Сортировка массива по возрастанию
+     **/
     int[] arraySort(int[] arr) {
-        for (int j=0; j<arr.length; j++) {
+        for (int j = 0; j < arr.length; j++) {
             for (int i = 0; i <= arr.length - 2 - j; i++) {
                 if (arr[i + 1] < arr[i]) {
                     int temp = arr[i];
@@ -60,18 +86,24 @@ class Calculator {
         }
         return arr;
     }
-    /**Печать масссива**/
-    void printArray(int[] arr){
+
+    /**
+     * Печать масссива
+     **/
+    void printArray(int[] arr) {
         System.out.println("Array:");
         for (int j : arr) {
             System.out.print(j + " ");
         }
     }
-    /**Возведение числа а в стапень b**/
-    int pow(int a, int b){
-        int k=a;
-        while (b>1){
-            a*=k;
+
+    /**
+     * Возведение числа а в стапень b
+     **/
+    int pow(int a, int b) {
+        int k = a;
+        while (b > 1) {
+            a *= k;
             b--;
         }
         return a;
