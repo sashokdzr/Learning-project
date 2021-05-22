@@ -102,7 +102,7 @@ class Calculator {
      **/
     int pow(int a, int b) {
         int k = a;
-        while (b > 1) {
+        while (b >= 2) {
             a *= k;
             b--;
         }
